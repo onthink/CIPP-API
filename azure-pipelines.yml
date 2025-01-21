@@ -28,7 +28,7 @@ steps:
 - task: AzureCLI@2
   displayName: "Publish Function App to TTA"
   inputs:
-    azureSubscription: 'azure-sub-partner-network'
+    azureSubscription: 'tta-internal-billing'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
@@ -37,7 +37,7 @@ steps:
 - task: AzureCLI@2
   displayName: "Publish Function App to TTA Int"
   inputs:
-    azureSubscription: 'think-technology-australia'
+    azureSubscription: 'tta-internal-billing'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
