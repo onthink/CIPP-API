@@ -32,13 +32,4 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      func azure functionapp publish func-tta-cipp-001 --powershell --force
-
-- task: AzureCLI@2
-  displayName: "Publish Function App to TTA Int"
-  inputs:
-    azureSubscription: 'think-technology-australia'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      func azure functionapp publish func-tta-cipp-int --powershell --force
+      func azure functionapp publish functtacipp001 --powershell --force
