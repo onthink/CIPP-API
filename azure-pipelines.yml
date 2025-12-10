@@ -22,7 +22,7 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      func azure functionapp publish func-lec-cipp --powershell --force
+      func azure functionapp publish funcleccipp --powershell --force
 
 - task: AzureCLI@2
   displayName: "Publish Function App to TTA"
